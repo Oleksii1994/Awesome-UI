@@ -1,0 +1,218 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+:root {
+  --main-page-bgrc: #f3f1ee;
+  --accent-color: #647b64;
+  --yellow-title-color: #f3b562;
+  --text-color: #4f4f4f;
+  --subtitle-color: #333333;
+  --button-color: #647b64;
+  --btn-text-color: #fefefe;
+  --white-color: #ffffff;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+
+  background-color: var(--main-page-bgrc);
+  color: var(--text-color);
+  width: 1440px;
+  margin: 0;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.link:hover,
+.link:focus {
+  text-decoration: underline;
+}
+
+.list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.section-title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: calc(32 / 24);
+  text-transform: uppercase;
+  color: var(--yellow-title-color);
+  text-transform: uppercase;
+}
+
+.main-text {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: calc(48 / 36);
+  text-transform: uppercase;
+  color: var(--accent-color);
+  text-transform: uppercase;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(24 / 16);
+  letter-spacing: 0.04em;
+}
+
+.link-nav {
+  color: var(--subtitle-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.button-header {
+  min-width: 104px;
+  color: var(--btn-text-color);
+  background-color: var(--accent-color);
+  font-style: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(24 / 16);
+  border-radius: 3px;
+  border-style: none;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.button-header:hover,
+.button-header:focus {
+  cursor: pointer;
+  color: var(--accent-color);
+  background-color: var(--btn-text-color);
+  box-shadow: 0px 20px 40px rgba(128, 143, 150, 0.19);
+  text-decoration: none;
+}
+
+.button-header:active {
+  cursor: pointer;
+  color: var(--accent-color);
+  background-color: var(--btn-text-color);
+  box-shadow: 0px 20px 40px rgba(128, 143, 150, 0.4);
+  text-decoration: none;
+}
+
+.button {
+  min-width: 200px;
+  color: var(--btn-text-color);
+  text-transform: uppercase;
+  background-color: var(--accent-color);
+  font-style: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(24 / 16);
+  text-transform: uppercase;
+  border-style: none;
+  border-radius: 2px;
+  box-shadow: 0px 20px 40px rgba(128, 143, 150, 0.19);
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.button:hover,
+.buuton:focus {
+  cursor: pointer;
+  color: var(--accent-color);
+  background-color: var(--btn-text-color);
+}
+
+.button:active {
+  color: var(--accent-color);
+  background-color: var(--btn-text-color);
+  text-decoration: none;
+  box-shadow: 0px 20px 40px rgba(128, 143, 150, 0.4);
+}
+
+.hero-title {
+  color: var(--subtitle-color);
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: calc(48 / 36);
+}
+
+.card-title {
+  color: var(--subtitle-color);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: calc(32 / 24);
+  font-style: inherit;
+}
+
+.card-text {
+  color: var(--text-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(22 / 14);
+  letter-spacing: 0.04em;
+}
+
+.cards-list {
+  display: block;
+}
+
+.card {
+  width: 288px;
+}
+
+.card:hover,
+.card:focus {
+  background-color: var(--white-color);
+  box-shadow: 0px 5.87438px 31.33px rgba(155, 148, 148, 0.17);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Features */
+
+.white-card {
+  background: linear-gradient(
+      358.27deg,
+      rgba(100, 123, 100, 0.77) -118.86%,
+      rgba(100, 123, 100, 0) 25.62%,
+      rgba(100, 123, 100, 0) 98.53%
+    ),
+    #ffffff;
+  border-radius: 8px;
+  width: 360px;
+}
+
+.green-card {
+  background: #647b64;
+  border-radius: 8px;
+  color: var(--white-color);
+  width: 360px;
+}
+
+.green-card-title {
+  color: var(--white-color);
+}
